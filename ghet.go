@@ -1,13 +1,15 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 22:23:10.230671593 +0200 CEST m=+0.179561317
+- Status: analyzed
+*/
+
 package main
 
 import (
-	"code.google.com/p/goauth2/oauth"
 	"encoding/base64"
 	"flag"
 	"fmt"
-	"github.com/google/go-github/github"
-	"github.com/robfig/config"
-	"github.com/syndtr/goleveldb/leveldb"
 	"log"
 	"net/url"
 	"os"
@@ -15,6 +17,11 @@ import (
 	"path/filepath"
 	"strings"
 	"text/tabwriter"
+
+	"code.google.com/p/goauth2/oauth"
+	"github.com/google/go-github/github"
+	"github.com/robfig/config"
+	"github.com/syndtr/goleveldb/leveldb"
 )
 
 func checkError(err error) {
